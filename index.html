@@ -25,5 +25,11 @@
 
     <script src="script.js"></script>
         console.log("¡Hola, formulario!");
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+            console.log('Formulario enviado');
+        });
+    </script>
 </body>
 </html>
